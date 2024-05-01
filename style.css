@@ -1,0 +1,60 @@
+html{
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 62.5%;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: wheat;
+}
+.container{
+  width: 70%;
+  margin: 10rem auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3,min-content);
+  gap: 1rem;
+}
+.post{
+  width: 100%;
+  padding: 2rem 1.5rem;
+  background-color: rgba(255, 255,255, .6);
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.post-title{
+  margin: 1.2rem 0;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.post-body{
+  margin: .8rem 0;
+  font-size: 1.8rem;
+}
+.btn{
+  align-self: self-end;
+  display: block;
+  border: none;
+  background-color: #ff9180;
+  color: #333;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  font-family: inherit;
+  font-size: 1.6rem ;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: all .3s linear;
+}
+.btn:hover{
+  transform: scale(1.1);
+  background-color: #333;
+  color: #ff9180;
+}
